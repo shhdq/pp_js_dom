@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tes</title>
+    
+    <style>
+        #container {
+            margin-top: 40px;
+            /* background-color: gray; */
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        #light {
+            /* background-color: beige; */
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cord {
+            background-color: black;
+            width: 5px;
+            height: 80%;
+        }
+
+        #bulb {
+            background-color: gray;
+            width: 75px;
+            height: 75px;
+            border-radius: 100px;
+        }
+
+        #switch-container {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+        }
+
+        #on {
+            background-color: green;
+        }
+        #off {
+            background-color: red;
+        }
+        #on, #off {
+            width: 30px;
+            height: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="test">Hello</h1>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio id illum magni consequatur! Saepe tempora inventore dolorum, reiciendis quibusdam quae non qui tempore a error sunt eveniet incidunt? Magni.</p>
+
+    <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error inventore illo corporis modi quasi accusamus, id dolorum vero sequi nisi esse temporibus minus quisquam officia praesentium aut dolores delectus!</p>
+
+    <button id="btn" onclick="changeThis()">Click</button>
+
+
+    <div id="container">
+
+        <div id="light">
+
+            <div id="cord">
+
+            </div>
+            <!--// cord -->
+
+            <div id="bulb">
+
+            </div>
+            <!--// buld -->
+
+            <div id="switch-container">
+
+                <button id="on" onclick="on()"></button>
+                <!--// on -->
+
+                <button id="off" onclick="off()"></button>
+                <!--// off -->
+
+            </div>
+            <!--// switch -->
+
+        </div>
+        <!--// light container -->
+
+    </div>
+
+    
+    <script>
+
+        const test = document.getElementById('test');
+
+        const p1 = document.getElementById('p1');
+
+        const p2 = document.getElementById('p2');
+
+        test.innerHTML = "Hello World!";
+
+        test.style.color = "red";
+
+        test.style.marginLeft = "20px";
+
+        document.getElementById('p1').style.color = 'green';
+
+        document.getElementById('p2').style.color = 'blue';
+
+
+        function changeThis() {
+            p1.innerHTML = 'Haha';
+            p2.innerHTML = 'hihi';
+        }
+        
+        // light
+        function on() {
+            document.getElementById('bulb').style.backgroundColor = 'yellow';
+        }
+
+        function off() {
+            document.getElementById('bulb').style.backgroundColor = 'gray';
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

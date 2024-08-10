@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="flex justify-center items-center h-[100vh]">
+
+    <div class="car w-[600px] flex flex-col items-center justify-center">
+
+        <div class="roof bg-gray-700 w-[300px] h-20"></div>
+        <!--// roof  -->
+
+        <div class="body bg-gray-700 w-full h-28"></div>
+        <!--// body -->
+
+        <div class="flex justify-around w-full relative -top-12">
+            <div class="wheel w-28 h-28 bg-black" id="wheel1"></div>
+            <div class="wheel w-28 h-28 bg-black" id="wheel2"></div>
+        </div>
+        <!--// wheeels container  -->
+
+    </div>
+    <!--// car -->
+
+    <script>
+
+        document.getElementById('wheel1').classList.add('animate-spin');
+        document.getElementById('wheel2').classList.add('animate-spin')
+
+
+    </script>
+    
+</body>
+</html>
